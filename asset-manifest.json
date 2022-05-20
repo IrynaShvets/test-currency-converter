@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/test-currency-converter/static/css/main.073c9b0a.css",
-    "main.js": "/test-currency-converter/static/js/main.19c3eeaf.js",
-    "static/js/787.e57c698f.chunk.js": "/test-currency-converter/static/js/787.e57c698f.chunk.js",
-    "static/media/logo.svg": "/test-currency-converter/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/test-currency-converter/static/css/main.3a52f58b.css",
+    "main.js": "/test-currency-converter/static/js/main.2f829e4b.js",
+    "home-page.js": "/test-currency-converter/static/js/home-page.57a81807.chunk.js",
+    "currency-exchange-page.js": "/test-currency-converter/static/js/currency-exchange-page.896f3206.chunk.js",
+    "movies-page.js": "/test-currency-converter/static/js/movies-page.c86e5839.chunk.js",
+    "static/js/740.f8194bdc.chunk.js": "/test-currency-converter/static/js/740.f8194bdc.chunk.js",
+    "static/js/53.eaa6fdf2.chunk.js": "/test-currency-converter/static/js/53.eaa6fdf2.chunk.js",
+    "static/media/note.png": "/test-currency-converter/static/media/note.0b00053ba9987de4b82c.png",
     "index.html": "/test-currency-converter/index.html",
-    "main.073c9b0a.css.map": "/test-currency-converter/static/css/main.073c9b0a.css.map",
-    "main.19c3eeaf.js.map": "/test-currency-converter/static/js/main.19c3eeaf.js.map",
-    "787.e57c698f.chunk.js.map": "/test-currency-converter/static/js/787.e57c698f.chunk.js.map"
+    "main.3a52f58b.css.map": "/test-currency-converter/static/css/main.3a52f58b.css.map",
+    "main.2f829e4b.js.map": "/test-currency-converter/static/js/main.2f829e4b.js.map",
+    "home-page.57a81807.chunk.js.map": "/test-currency-converter/static/js/home-page.57a81807.chunk.js.map",
+    "currency-exchange-page.896f3206.chunk.js.map": "/test-currency-converter/static/js/currency-exchange-page.896f3206.chunk.js.map",
+    "movies-page.c86e5839.chunk.js.map": "/test-currency-converter/static/js/movies-page.c86e5839.chunk.js.map",
+    "740.f8194bdc.chunk.js.map": "/test-currency-converter/static/js/740.f8194bdc.chunk.js.map",
+    "53.eaa6fdf2.chunk.js.map": "/test-currency-converter/static/js/53.eaa6fdf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.19c3eeaf.js"
+    "static/css/main.3a52f58b.css",
+    "static/js/main.2f829e4b.js"
   ]
 }

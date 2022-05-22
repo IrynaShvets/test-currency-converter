@@ -26,10 +26,7 @@ function HomePage() {
 
   return (
     <>
-      <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
-        <h1 className="title">List of currencies</h1>
-      </div>
-
+      <h1 className="title">List of currencies</h1>
       <Home currencyOptions={currencyOptions} />
       {loading && <Loader />}
       {error && toast.error(error.message)}

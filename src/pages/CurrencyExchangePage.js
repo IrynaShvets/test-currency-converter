@@ -72,12 +72,8 @@ function CurrencyExchangePage() {
 
   return (
     <>
-      <div
-        data-aos="flip-left"
-        data-aos-easing="linear"
-        data-aos-duration="2000"
-      >
         <h2 className="title">Convert</h2>
+
         <CurrencyExchange
           currencyOptions={currencyOptions}
           selectedCurrency={fromCurrency}
@@ -85,7 +81,9 @@ function CurrencyExchangePage() {
           amount={fromAmount}
           onChangeAmount={handleFromChangeAmount}
         />
+
         <div className="total">=</div>
+
         <CurrencyExchange
           currencyOptions={currencyOptions}
           selectedCurrency={toCurrency}
@@ -93,7 +91,6 @@ function CurrencyExchangePage() {
           amount={toAmount}
           onChangeAmount={handleToChangeAmount}
         />
-      </div>
       {error && toast.error(error.message)}
       {loading && <Loader />}
     </>

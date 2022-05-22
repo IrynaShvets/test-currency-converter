@@ -15,13 +15,7 @@ function Contacts() {
   return (
     <>
       <Image src={Note} alt="alt" />
-      <div
-        data-aos="fade-down-left"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-      >
-        <h3 className="title">My contacts:</h3>
-      </div>
+      <h3 className="title">My contacts:</h3>
 
       <div>
         <Address>

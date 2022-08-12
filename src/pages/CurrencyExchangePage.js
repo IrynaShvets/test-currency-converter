@@ -29,11 +29,16 @@ function CurrencyExchangePage() {
       setLoading(true);
       try {
         const { results, base } = await apiAllCurrency();
-        const firstCurrency = Object.keys(results)[0];
-        setCurrencyOptions([base, ...Object.keys(results)]);
-        setFromCurrency(base);
-        setToCurrency(toCurrency);
-        setExchangeRate(results[firstCurrency]);
+        if (!results) {
+          return;
+        }
+        if (results) {
+          const firstCurrency = Object.keys(results)[0];
+          setCurrencyOptions([base, ...Object.keys(results)]);
+          setFromCurrency(base);
+          setToCurrency(toCurrency);
+          setExchangeRate(results[firstCurrency]);
+        }
       } catch {
         setError(error.message);
       } finally {
@@ -72,8 +77,9 @@ function CurrencyExchangePage() {
 
   return (
     <>
-        <h2 className="title">Convert</h2>
+      <h2 className="title">Convert</h2>
 
+      {currencyOptions && (
         <CurrencyExchange
           currencyOptions={currencyOptions}
           selectedCurrency={fromCurrency}
@@ -81,9 +87,11 @@ function CurrencyExchangePage() {
           amount={fromAmount}
           onChangeAmount={handleFromChangeAmount}
         />
+      )}
 
-        <div className="total">=</div>
+      <div className="total">=</div>
 
+      {currencyOptions && (
         <CurrencyExchange
           currencyOptions={currencyOptions}
           selectedCurrency={toCurrency}
@@ -91,6 +99,7 @@ function CurrencyExchangePage() {
           amount={toAmount}
           onChangeAmount={handleToChangeAmount}
         />
+      )}
       {error && toast.error(error.message)}
       {loading && <Loader />}
     </>

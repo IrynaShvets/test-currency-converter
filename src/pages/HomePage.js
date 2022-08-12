@@ -14,7 +14,9 @@ function HomePage() {
       setLoading(true);
       try {
         const { results } = await apiAllCurrency();
-        setCurrencyOptions([...Object.keys(results)]);
+        if (results) {
+          setCurrencyOptions([...Object.keys(results)]);
+        }
       } catch {
         setError(error.message);
       } finally {
@@ -27,7 +29,7 @@ function HomePage() {
   return (
     <>
       <h1 className="title">List of currencies</h1>
-      <Home currencyOptions={currencyOptions} />
+      {currencyOptions && <Home currencyOptions={currencyOptions} />}
       {loading && <Loader />}
       {error && toast.error(error.message)}
     </>

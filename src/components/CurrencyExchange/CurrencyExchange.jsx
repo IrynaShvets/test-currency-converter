@@ -11,11 +11,13 @@ function CurrencyExchange(props) {
     onChangeAmount,
   } = props;
 
+  if (isNaN(amount)) {
+    return;
+  }
+
   return (
     <div>
-      {amount && (
-        <Input type="number" value={amount} onChange={onChangeAmount} />
-      )}
+      <Input type="string" value={amount} onChange={onChangeAmount} />
       <Select value={selectedCurrency} onChange={onChangeCurrency}>
         {currencyOptions.map(option => (
           <option key={nanoid()} value={option}>
